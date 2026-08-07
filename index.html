@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es-VE" data-tema="oscuro">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: la app ocupa hasta el borde; el CSS respeta el notch
+         y la barra de gestos con env(safe-area-inset-*).
+
+         SIN user-scalable=no: bloquear el zoom incumple WCAG 1.4.4, y el motivo
+         por el que se puso —que iOS amplia solo al enfocar un campo— ya esta
+         resuelto en global.css, donde todo campo mide al menos 16 px. Poder
+         ampliar importa aqui: las cifras del historial se leen a un brazo de
+         distancia y con el pulso acelerado. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0A0908" />
+    <meta name="description" content="Ainu Personal App · entrenamiento, registro y progresión" />
+
+    <!-- iOS: sin estas tres, al añadir a la pantalla de inicio se abre una
+         pestaña de Safari con barra de direcciones en vez de una app. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ainu" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <title>Ainu Personal App · Entrenamiento</title>
+    <script type="module" crossorigin src="./assets/index-DzVNesaP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cba05_Ps.css">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <body>
+    <div id="raiz"></div>
+    <noscript>
+      Esta aplicación necesita JavaScript. Actívalo en Ajustes → Safari → Avanzado.
+    </noscript>
+  </body>
+</html>
